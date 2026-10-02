@@ -10,17 +10,17 @@ Rating guide:
 """
 
 # 1. IMPORT PACKAGES
-from io import BytesIO                 # Lets us read uploaded files in memory.
-from pathlib import Path               # Locates Recipe_Dataset.csv beside this script.
-import re                              # Provides regular expressions.
-import textwrap                        # Wraps long text in PDF reports.
+from io import BytesIO
+from pathlib import Path
+import re
+import textwrap                       
 
-import matplotlib.pyplot as plt        # Creates evaluation figures.
-from matplotlib.backends.backend_pdf import PdfPages  # Creates PDF downloads.
-import numpy as np                     # Supports numerical operations.
-import pandas as pd                    # Reads and processes CSV data.
-from pypdf import PdfReader            # Extracts text from uploaded PDFs.
-import streamlit as st                 # Creates the user interface.
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+import numpy as np
+import pandas as pd
+from pypdf import PdfReader
+import streamlit as st
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
