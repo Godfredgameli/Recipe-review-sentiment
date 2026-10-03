@@ -78,10 +78,7 @@ st.session_state.setdefault('prediction_input_kind', None)
 def login_page():
     """Show a basic classroom login; this is not production security."""
     st.title('🍲 Restaurant / recipe review analytics', text_alignment='center')
-    st.caption(
-        'Group 4 - TF-IDF - Support Vector Machine - Random Forest',
-        text_alignment='center',
-    )
+    
 
     with st.container(horizontal_alignment='center'):
         with st.form('login_form', width=420):
